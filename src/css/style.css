@@ -1,0 +1,134 @@
+body {
+    font-family: "Poppins", sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #b2b0b4;
+    color: #000;
+}
+
+body.modo-escuro {
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+h1 {
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo {
+    font-size: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+header .imagem-botao {
+    width: 35px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+}
+
+main .listagem-personagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-personagem {
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-personagem:hover {
+    background-color: #a57bdf;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.modo-escuro .cartao-personagem {
+    background-color: #a8a8a8;
+    color: #fff;
+}
+
+main .cartao-personagem .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-personagem .informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-personagem .imagem {
+    border-radius: 50%;
+}
+
+main .cartao-personagem .tipo {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.dendro {
+    background-color: #15ec09;
+}
+
+.crio {
+    background-color: #09caec;
+}
+
+.piro {
+    background-color: #f11b1b;
+}
+
+.eletro {
+    background-color: #a409ec;
+}
+
+.anemo {
+    background-color: #14c27f;
+}
+
+.hidro {
+    background-color: #0951ec;
+}
+
+.geo {
+    background-color: #ecaf09;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
